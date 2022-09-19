@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html>
+       <head>
+<link rel="stylesheet" href="index.css">
+
+       </head>
+    <body>
+   <form action="/" method="post"  enctype="multipart/form-data">
+    <input name="ma_sp" placeholder="nhap ma san pham"/>
+    <input name="ten_sp" placeholder="nhap ten san pham"/>
+    <input type="submit" value="them"/>
+    
+</form>
+<table>
+    <tr>
+        <th>Ma san pham</th>
+        <th>Ten san pham</th>
+    </tr>
+<% for(let i=0; i<data.length; i++) { %>
+    <tr>
+        <td><%=data[i].ma_sp%></td>
+        <td><%=data[i].ten_sp%></td>
+    </tr>
+    
+<% } %>
+</table>
+</body>
+
+
+    </html>
